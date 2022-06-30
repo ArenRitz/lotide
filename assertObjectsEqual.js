@@ -12,7 +12,7 @@ const eqObjects = (obj1, obj2) => {
     }
     return isEqual;
   };
-  
+
 
 
   let objKeys1 = Object.keys(obj1);
