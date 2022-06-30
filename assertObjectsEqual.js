@@ -31,7 +31,7 @@ const eqObjects = (obj1, obj2) => {
           return false;
         }
       } else if (Array.isArray(obj1[key]) && Array.isArray(obj2[key])) { // if the value is an array
-        return eqArrays(obj1[key], obj2[key]);
+        match = eqArrays(obj1[key], obj2[key]);
       }
     }
   }
