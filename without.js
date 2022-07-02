@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 const assertArraysEqual = function(arr1, arr2) {
   const sucessMsg = `🟢 🟢 🟢 Arguments match: ${arr1} === ${arr2} 🟢 🟢 🟢 `;
   const failMsg = `🔴 🔴 🔴 Arguments DO NOT match: ${arr1} === ${arr2} 🔴 🔴 🔴 `;
@@ -19,6 +20,7 @@ const assertArraysEqual = function(arr1, arr2) {
   }
 };
 
+// eslint-disable-next-line no-unused-vars
 const without = function(source, itemsToRemove) {
   let newArr = [];
   for (let i = 0; i < source.length; i++) {
