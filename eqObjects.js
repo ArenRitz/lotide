@@ -9,7 +9,7 @@ const assertEqual = function(actual, expected) {
 
 
 
-const eqArrays = function (arr1, arr2) {
+const eqArrays = function(arr1, arr2) {
   let isEqual = false;
   if (arr1.length === arr2.length) {
     for (let i = 0; i < arr1.length; i++) {
@@ -50,8 +50,8 @@ const eqObjects = (obj1, obj2) => {
     }
   }
 
-  return match
-} 
+  return match;
+};
 
 
 

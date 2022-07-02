@@ -1,4 +1,4 @@
-const assertArraysEqual = function (arr1, arr2) {
+const assertArraysEqual = function(arr1, arr2) {
   const sucessMsg = `🟢 🟢 🟢 Arguments match: ${arr1} === ${arr2} 🟢 🟢 🟢 `;
   const failMsg = `🔴 🔴 🔴 Arguments DO NOT match: ${arr1} === ${arr2} 🔴 🔴 🔴 `;
   let isEqual = false;
@@ -19,16 +19,16 @@ const assertArraysEqual = function (arr1, arr2) {
   }
 };
 
-const without = function (source, itemsToRemove) {
+const without = function(source, itemsToRemove) {
   let newArr = [];
   for (let i = 0; i < source.length; i++) {
     if (!itemsToRemove.includes(source[i])) {
-      newArr.push(source[i])
+      newArr.push(source[i]);
     }
   }
   //console.log(source) --chekc if original array is modified
-  return newArr
-}
+  return newArr;
+};
 
 /*
 const array1 = ["apple", "candy", "chocolate", "bugs", "dog"];
