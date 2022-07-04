@@ -1,10 +1,9 @@
-const assertEqual = require('../assertEqual');
+const _ = require('../index');
 
 
 
-
-assertEqual(1, 2);
-assertEqual(2, 2);
-assertEqual("equal", "equal")
+_.assertEqual(1, 2);
+_.assertEqual(2, 2);
+_.assertEqual("equal", "equal")
 
 

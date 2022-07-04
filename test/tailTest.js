@@ -1,4 +1,4 @@
-const tail = require('../tail');
+const _ = require('../index');
 const assert = require('chai').assert;
 
 
@@ -7,25 +7,25 @@ const assert = require('chai').assert;
 
 describe("#tail", () => {
   it('should return 2 elements for ["Hello", "Lighthouse", "Labs"]', () => {
-    const result = tail(["Hello", "Lighthouse", "Labs"]);
+    const result = _.tail(["Hello", "Lighthouse", "Labs"]);
     assert.strictEqual(result.length, 2);
    
   });
   it("should return 'Lighthouse' as first element", () => {
-    const result = tail(["Hello", "Lighthouse", "Labs"]);
+    const result = _.tail(["Hello", "Lighthouse", "Labs"]);
     assert.strictEqual(result[0], "Lighthouse");
   });
   it("should return 'Labs' as second element", () => {
-    const result = tail(["Hello", "Lighthouse", "Labs"]);
+    const result = _.tail(["Hello", "Lighthouse", "Labs"]);
     assert.strictEqual(result[1], "Labs");
   });
   it("should return 'Labs' as second element", () => {
-    const result = tail(["Hello", "Lighthouse", "Labs"]);
+    const result = _.tail(["Hello", "Lighthouse", "Labs"]);
     assert.strictEqual(result[1], "Labs");
   });
   it("should not modify the initial array", () => {
     const words = ["Hello", "Lighthouse", "Labs"];
-    tail(words);
+    _.tail(words);
     assert.deepEqual(words, ["Hello", "Lighthouse", "Labs"]);
   });
 });
