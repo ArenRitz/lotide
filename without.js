@@ -40,3 +40,7 @@ const array2 = ["apple", "bugs"];
 assertArraysEqual(without(array1, array2), ["candy", "chocolate", "dog"]);
 assertArraysEqual(without(array1, array2), ["candy", "chocolate", "bat"]);
 */
+
+
+
+module.exports = without;

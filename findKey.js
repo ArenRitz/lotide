@@ -28,3 +28,6 @@ assertEqual(findKey({
 }, x => x.stars === 2), "noma"); // => "noma"
 
 
+
+
+module.exports = findKey;
